@@ -16,6 +16,7 @@ const Home = () => {
   const { imgs, setImgs } = React.useContext(ImgContext)
   return (
     <div>
+      {console.log(imgs)}
       <div className="container-title">
         <h3>Natural Pic</h3>
       </div>

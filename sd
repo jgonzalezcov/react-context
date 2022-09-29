@@ -1,0 +1,23 @@
+[33mcommit 36b0bb2ee672b3fe9e3accf897e41330898a38b9[m[33m ([m[1;36mHEAD -> [m[1;32mFeature[m[33m, [m[1;31morigin/Feature[m[33m)[m
+Author: Juan Gonzalez Covarrubias <104181238+jgonzalezcov@users.noreply.github.com>
+Date:   Thu Sep 29 10:34:41 2022 -0300
+
+    fix:router is modified
+
+[33mcommit c142cf7ba76967241416bd903fd4deafdd8e1d04[m
+Author: Juan Gonzalez Covarrubias <104181238+jgonzalezcov@users.noreply.github.com>
+Date:   Thu Sep 29 10:22:17 2022 -0300
+
+    fix: Change from axios to fetch, for communication with json file, since in github it does not access the file
+
+[33mcommit 3d0c488916bb7053203f51f85bdd1c28d6e4331f[m
+Author: Juan Gonzalez Covarrubias <104181238+jgonzalezcov@users.noreply.github.com>
+Date:   Wed Sep 28 23:26:45 2022 -0300
+
+    feat: first working version of the project
+
+[33mcommit 558538ae6c79a3702bfcad94eca4bd20ce3ac55a[m[33m ([m[1;32mmain[m[33m)[m
+Author: Juan Gonzalez Covarrubias <104181238+jgonzalezcov@users.noreply.github.com>
+Date:   Wed Sep 28 11:46:18 2022 -0300
+
+    Initialize project using Create React App

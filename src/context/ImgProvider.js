@@ -4,16 +4,16 @@ export const ImgContext = React.createContext()
 
 const ImgProvider = (props) => {
   const jsonData = async () => {
-    const response = await axios.get('/imgGallery.json')
-    setImgs(response.data.photos)
+    const url = '/imgGallery.json'
+    const response = await fetch(url)
+    const data = await response.json()
+    setImgs(data.data.results)
   }
   useEffect(() => {
     jsonData()
   }, [])
 
   const [imgs, setImgs] = useState([])
-
-  const axios = require('axios')
 
   return (
     <ImgContext.Provider value={{ imgs, setImgs }}>

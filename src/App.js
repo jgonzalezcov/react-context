@@ -12,8 +12,8 @@ function App() {
           <Navbar />
 
           <Routes>
-            <Route path="/react-context" element={<Home />} />
-            <Route path="/react-context/favoritos" element={<Favorites />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/favoritos" element={<Favorites />} />
           </Routes>
         </BrowserRouter>
       </ImgProvider>

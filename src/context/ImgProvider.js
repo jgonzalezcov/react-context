@@ -1,13 +1,11 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 export const ImgContext = React.createContext()
-
+const axios = require('axios')
 const ImgProvider = (props) => {
   const jsonData = async () => {
-    const url = '/imgGallery.json'
-    const response = await fetch(url)
-    const data = await response.json()
-    setImgs(data.data.results)
+    const response = await axios.get('/imgGallery.json')
+    setImgs(response.data.photos)
   }
   useEffect(() => {
     jsonData()

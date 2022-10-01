@@ -5,10 +5,12 @@ const Home = () => {
   const viewFunctions = (idIndex) => {
     setImgs((current) =>
       current.map((obj) => {
-        if (obj.id === idIndex) {
+        if (obj.id === idIndex && obj.filled === false) {
           return { ...obj, filled: true }
         }
-
+        if (obj.id === idIndex && obj.filled === true) {
+          return { ...obj, filled: false }
+        }
         return obj
       })
     )
